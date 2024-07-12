@@ -1,15 +1,16 @@
 import React from "react";
 import logo from "../assets/Kasa.svg";
-import Navigation from "../components/Navigation";
-import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
+import "../styles/Home.css";
 
 function Home() {
   return (
-    <div>
-      <img src={logo} alt="Logo Kasa" />
-      <h1>KASA TEST</h1>
+    <div className="mainContainer">
+      <div className="container">
+        <header class="Header"></header>
+      </div>
 
-      <Navigation />
+      <Footer></Footer>
     </div>
   );
 }
