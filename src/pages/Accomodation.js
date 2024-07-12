@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Kasa.svg";
+import logo from "../assets/logoKasa.svg";
 
 function Accomodation() {
   return (

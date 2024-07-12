@@ -1,13 +1,16 @@
 import React from "react";
-import logo from "../assets/Kasa.svg";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Banner from "../components/Banner/Banner";
 import "../styles/Home.css";
 
 function Home() {
   return (
     <div className="mainContainer">
+      <Header />
+
       <div className="container">
-        <header class="Header"></header>
+        <Banner />
       </div>
 
       <Footer></Footer>

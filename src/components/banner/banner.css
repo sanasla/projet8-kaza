@@ -1,0 +1,44 @@
+.banner {
+    margin-top: 16px;
+  }
+
+.Banner_home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+}
+
+.Banner_title{
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #e41313;
+    animation: appear 3s;
+} 
+.Banner_img {
+    width: 100%;
+    border-radius: 25px;
+    opacity: 0.7;
+    object-fit: cover;
+  }
+
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .banner {
+      margin-top: 64px;
+    }
+  }
