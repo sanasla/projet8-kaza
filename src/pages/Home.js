@@ -1,7 +1,8 @@
-import React from "react";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Banner from "../components/Banner/Banner";
+import Gallery from "../components/Gallery/Gallery";
+
 import "../styles/Home.css";
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
 
       <div className="container">
         <Banner />
+        <Gallery />
       </div>
 
       <Footer></Footer>
