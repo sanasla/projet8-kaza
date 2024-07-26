@@ -3,19 +3,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
-  .logoHeader {
-    width: 211px;
-    height: 68px;
-  }
-  .menu {
-    display: flex;
-    height: 34px;
-    justify-content: flex-end;
-    width: 309px;
 }
-
-.accueil, .about {
+.logoHeader {
+  width: 211px;
+  height: 68px;
+}
+.navHeader {
+  width: 309px;
+  height: 34px;
+  display: flex;
+  justify-content: flex-end;
+}
+.navHome,
+.navAbout {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -25,13 +25,12 @@
   text-align: right;
   text-decoration-line: none;
   color: #ff6060;
-
 }
-.accueil:hover,
-.about:hover {
+.navHome:hover,
+.navAbout:hover {
   text-decoration: underline;
 }
 
-.about {
+.navAbout {
   margin-left: 20%;
 }

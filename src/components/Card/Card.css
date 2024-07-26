@@ -20,11 +20,17 @@
 }
 
 .card_title {
+    
     color: white;
     font-size: 18px;
-    font-family: "Montserrat";
+    width: 311px;
     font-weight: 500;
-    margin-left: 20px;
+  
+    padding-left: 20px;
+ 
+   
+    position: absolute;
+    
 }
 
 .cards a {

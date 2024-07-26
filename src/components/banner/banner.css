@@ -1,5 +1,6 @@
 .banner {
     margin-top: 16px;
+    margin: auto;
   }
 
 .Banner_home {
@@ -16,7 +17,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    color: #e41313;
+    color: #fff;
     animation: appear 3s;
 } 
 .Banner_img {

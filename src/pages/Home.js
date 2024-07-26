@@ -8,9 +8,8 @@ import "../styles/Home.css";
 function Home() {
   return (
     <div className="mainContainer">
-      <Header />
-
       <div className="container">
+        <Header />
         <Banner />
         <Gallery />
       </div>

@@ -1,13 +1,18 @@
-import React from "react";
-import logo from "../assets/logoKasa.svg";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
+import Banner_about from "../components/Banner-about/Banner-about";
+import Collapse from "../components/Collapse/Collapse";
 
-function About() {
+import "../styles/About.css";
+
+export default function About() {
   return (
-    <div>
-      <img src={logo} alt="Logo Kasa" />
-      <h1>KASA À propos</h1>
+    <div className="About">
+      <Header />
+      <Banner_about />
+      <Collapse />
+
+      <Footer />
     </div>
   );
 }
-
-export default About;
