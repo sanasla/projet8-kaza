@@ -1,46 +1,79 @@
 .banner {
-    margin-top: 16px;
-    margin: auto;
-  }
-
-.Banner_home {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background: rgb(0, 0, 0);
+  margin-top: 16px;
+}
+.imgContainerHome {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: rgb(0, 0, 0);
+}
+.bannerImg {
+  width: 100%;
+  border-radius: 25px;
+  opacity: 0.7;
+  object-fit: cover;
+}
+.bannerTitle {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+  animation: appear 3s;
 }
 
-.Banner_title{
-    position: absolute;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    color: #fff;
-    animation: appear 3s;
-} 
-.Banner_img {
-    width: 100%;
-    height: 223px;
-    border-radius: 25px;
-    opacity: 0.7;
-    object-fit: cover;
+@keyframes appear {
+  from {
+    opacity: 0;
   }
 
+  to {
+    opacity: 1;
+  }
+}
 
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+@media (min-width: 768px) {
+  .banner {
+    margin-top: 64px;
+  }
+}
+
+/*Media queries pour mobiles*/
+@media screen and (max-width: 480px) {
+  .imgContainerHome {
+    justify-content: left;
+    border-radius: 10px;
+    height: 111px;
   }
 
-  @media (min-width: 768px) {
-    .banner {
-      margin-top: 64px;
-    }
+  .img {
+    border-radius: 10px;
+    height: 100%;
   }
+  .title {
+    font-size: 24px;
+    width: 60%;
+    padding-left: 16px;
+  }
+}
+
+/*Media queries pour tablettes*/
+
+@media screen and (min-width: 481px) and (max-width: 830px) {
+  .imgContainerHome {
+    justify-content: left;
+    border-radius: 10px;
+    height: 111px;
+  }
+  .img {
+    border-radius: 10px;
+    height: 111px;
+  }
+  .title {
+    font-size: 30px;
+    width: 60%;
+    padding-left: 16px;
+  }
+}

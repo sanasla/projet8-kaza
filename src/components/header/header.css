@@ -1,5 +1,5 @@
 .header {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,4 +33,35 @@
 
 .navAbout {
   margin-left: 20%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-top: 40px;
+  }
+}
+
+/*Media queries pour mobiles*/
+@media screen and (max-width: 480px) {
+  .logoHeader {
+    width: 145px;
+    height: 47px;
+  }
+  .navHeader {
+    width: 155px;
+    height: 21px;
+    text-transform: uppercase;
+  }
+  .navHome,
+  .navAbout {
+    font-size: 12px;
+  }
+}
+
+/*Media queries pour tablettes*/
+@media screen and (min-width: 481px) and (max-width: 830px) {
+  .navHome,
+  .navAbout {
+    font-size: 16px;
+  }
 }

@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Banner_about from "../components/Banner-about/Banner-about";
 import Collapse from "../components/Collapse/Collapse";
 
-import "../styles/About.css";
+import "../styles/about.css";
 
 export default function About() {
   const abouts = [
@@ -27,9 +27,9 @@ export default function About() {
         "text": "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
     }
   ]
-  
+
   return (
-    <div className="About">
+    <div className="about">
       <Header />
       <Banner_about />
       <section className="collapseAboutContainer">
