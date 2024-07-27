@@ -17,16 +17,3 @@ export default function Header() {
     </header>
   );
 }
-
-<header className="header">
-  <img src={logoKasa} alt="Logo Kasa" className="logoHeader" />
-
-  <div className="menu">
-    <a href="/accueil" className="accueil">
-      Accueil
-    </a>
-    <a href="/about" className="about">
-      À propos
-    </a>
-  </div>
-</header>;

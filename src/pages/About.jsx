@@ -1,6 +1,6 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Banner_about from "../components/Banner-about/Banner-about";
+import BannerAbout from "../components/Banner-about/BannerAbout";
 import Collapse from "../components/Collapse/Collapse";
 
 import "../styles/about.css";
@@ -29,14 +29,16 @@ export default function About() {
   ]
 
   return (
-    <div className="about">
-      <Header />
-      <Banner_about />
-      <section className="collapseAboutContainer">
-        {abouts.map((about, index) => (
-          <Collapse key={index} about={about} />
-        ))}
-      </section>
+    <div className="mainContainer">
+      <div className="container" >
+        <Header />
+        <BannerAbout />
+        <section className="collapseAboutContainer">
+          {abouts.map((about, index) => (
+            <Collapse key={index} about={about} />
+          ))}
+        </section>
+      </div>
       <Footer />
     </div>
   );

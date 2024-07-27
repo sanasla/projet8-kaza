@@ -11,7 +11,7 @@ export default function Collapse({about}) {
 
   return (
       <div className="collapseContainer">
-        <div className="title" onClick={toggleCollapse}>
+        <div className="collapseTitle" onClick={toggleCollapse}>
           {about.title}
           { /* if isOpen===true ===> className=iconUp else className=iconDown  */}
 
