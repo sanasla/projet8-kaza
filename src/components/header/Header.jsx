@@ -4,13 +4,13 @@ import logoKasa from "../../assets/logoKasa.svg";
 export default function Header() {
   return (
     <header className="header">
-      <img src={logoKasa} alt="Logo Kasa" class="logoHeader" />
+      <img src={logoKasa} alt="Logo Kasa" className="logoHeader" />
 
       <nav className="navHeader">
-        <a class="navHome" href="/">
+        <a className="navHome" href="/">
           Accueil
         </a>
-        <a class="navAbout" href="/about">
+        <a className="navAbout" href="/about">
           À propos
         </a>
       </nav>
@@ -19,7 +19,7 @@ export default function Header() {
 }
 
 <header className="header">
-  <img src={logoKasa} alt="Logo Kasa" class="logoHeader" />
+  <img src={logoKasa} alt="Logo Kasa" className="logoHeader" />
 
   <div className="menu">
     <a href="/accueil" className="accueil">

@@ -3,3 +3,9 @@
     width:1536px;
     margin: auto;
 }
+
+.collapseAboutContainer {
+    margin: 30px 208px 30px 208px;
+    display: flex;
+    flex-direction: column;
+  }
