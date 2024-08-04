@@ -1,9 +1,10 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import BannerAbout from "../components/Banner-about/BannerAbout";
+import Banner_about from "../components/Banner-about/BannerAbout";
 import Collapse from "../components/Collapse/Collapse";
 
 import "../styles/about.css";
+import "../styles/index.css";
 
 export default function About() {
   const abouts = [
@@ -32,7 +33,7 @@ export default function About() {
     <div className="mainContainer">
       <div className="container" >
         <Header />
-        <BannerAbout />
+        <Banner_about />
         <section className="collapseAboutContainer">
           {abouts.map((about, index) => (
             <Collapse key={index} about={about} />

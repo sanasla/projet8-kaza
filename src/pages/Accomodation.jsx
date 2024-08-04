@@ -1,13 +1,18 @@
 import React from "react";
-import logo from "../assets/logoKasa.svg";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import AccomodationContent from "../components/AccomodationContent/AccomodationContent";
+import "../styles/index.css";
 
-function Accomodation() {
+export default function Accomodation() {
   return (
-    <div>
-      <img src={logo} alt="Logo Kasa" />
-      <h1>Nos Logements</h1>
+    <div className="mainContainer">
+      <div className="container">
+        <Header />
+       <AccomodationContent />
+      </div>
+
+      <Footer></Footer>
     </div>
   );
 }
-
-export default Accomodation;

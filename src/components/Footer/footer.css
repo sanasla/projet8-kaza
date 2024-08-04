@@ -21,3 +21,17 @@
   padding-bottom: 20px;
   font-size: 24px;
 }
+
+/*Media queries pour mobiles*/
+@media screen and (max-width: 480px) {
+  .textFooter {
+    font-size: 12px;
+  }
+}
+
+/*Media queries pour tablettes*/
+@media screen and (min-width: 481px) and (max-width: 830px) {
+  .textFooter {
+    font-size: 16px;
+  }
+}

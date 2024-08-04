@@ -1,5 +1,5 @@
 import "./collapse.css";
-import arrowDown from "../../assets/arrowDown.svg";
+import arrow from "../../assets/arrow.svg";
 import { useState } from "react";
 
 export default function Collapse({about}) {
@@ -13,12 +13,13 @@ export default function Collapse({about}) {
       <div className="collapseContainer">
         <div className="collapseTitle" onClick={toggleCollapse}>
           {about.title}
+          
           { /* if isOpen===true ===> className=iconUp else className=iconDown  */}
 
           <img
-            src={arrowDown}
+            src={arrow}
             className={isOpen ? 'iconUp' : 'iconDown'}
-            alt="arrow down"
+            alt="arrow"
             role="button"
           />
         </div>

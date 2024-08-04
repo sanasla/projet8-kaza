@@ -1,13 +1,19 @@
-import React from "react";
-import logo from "../assets/logoKasa.svg";
 
-function Page404() {
+import Error404 from "../components/Error404/Error404";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+
+
+export default function Page404() {
   return (
-    <div>
-      <img src={logo} alt="Logo Kasa" />
-      <h1>Ceci n'est pas la page que vous recherchiez!</h1>
+<div className="mainContainer">
+    <div class="container">
+     <Header />
+     <Error404/>
     </div>
+
+  <Footer />
+</div> 
+  
   );
 }
-
-export default Page404;
