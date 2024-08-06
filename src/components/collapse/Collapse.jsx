@@ -2,7 +2,7 @@ import "./collapse.css";
 import arrow from "../../assets/arrow.svg";
 import { useState } from "react";
 
-export default function Collapse({about}) {
+export default function Collapse({title, text }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
@@ -12,7 +12,7 @@ export default function Collapse({about}) {
   return (
       <div className="collapseContainer">
         <div className="collapseTitle" onClick={toggleCollapse}>
-          {about.title}
+          {title}
           
           { /* if isOpen===true ===> className=iconUp else className=iconDown  */}
 
@@ -27,7 +27,7 @@ export default function Collapse({about}) {
         { /* if isOpen=== true display text */}
         {isOpen && 
           <div className="text">
-            {about.text}
+            {text}
           </div>
         }
       </div>

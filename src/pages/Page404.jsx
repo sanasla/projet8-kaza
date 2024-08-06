@@ -7,11 +7,10 @@ import Footer from "../components/Footer/Footer";
 export default function Page404() {
   return (
 <div className="mainContainer">
-    <div class="container">
+    <div className="container">
      <Header />
      <Error404/>
     </div>
-
   <Footer />
 </div> 
   

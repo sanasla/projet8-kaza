@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import './Slideshow.module.css'
+import './carousel.css'
 import Arrow from '../../assets/arrow.svg'
 
-export default Carrousel = (img) => {
+export default function Carrousel (img) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const previousImg = () => {
@@ -19,33 +19,33 @@ export default Carrousel = (img) => {
   }
 
   return (
-    <div className={slideContainer}>
+    <div className="slideContainer">
       {img.data.length > 1 && (
         <>
           <img
             src={Arrow}
             alt="left arrow"
             role="button"
-            className={leftArrow}
+            className="leftArrow"
             onClick={previousImg}
           />
           <img
             src={Arrow}
             alt="right arrow"
             role="button"
-            className={rightArrow}
+            className="rightArrow"
             onClick={nextImg}
           />
         </>
       )}
-      <div className={imgContainer}>
+      <div className="imgContainer">
         <img
           src={img.data[currentIndex]}
           alt="logement"
-          className={imgSlide}
+          className="imgSlide"
         />
       </div>
-      <div className={numbers}>
+      <div className="numbers">
         {img.data.length > 1 && (
           <p>{currentIndex + 1 + '/' + img.data.length}</p>
         )}

@@ -36,7 +36,7 @@ export default function About() {
         <Banner_about />
         <section className="collapseAboutContainer">
           {abouts.map((about, index) => (
-            <Collapse key={index} about={about} />
+            <Collapse key={index} title={about.title} text={about.text} />
           ))}
         </section>
       </div>
