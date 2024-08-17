@@ -26,8 +26,9 @@ export default function Accomodation() {
         const names = data.host.name.split(' ')
         data.firstName = names[0]
         data.lastName = names[1]
-        data.rateStar = []
 
+        data.rateStar = []
+        
         for (let s = 1; s <= 5; s++) {
           if (s <= data.rating) {
             data.rateStar[s] = true

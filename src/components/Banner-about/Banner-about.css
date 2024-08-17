@@ -1,6 +1,8 @@
 .banner {
   margin-top: 16px;
+
 }
+
 .imgContainer {
   width: 100%;
   display: flex;
@@ -8,21 +10,18 @@
   align-items: center;
   border-radius: 25px;
   background: rgb(0, 0, 0);
+  height: 80% !important;
+  
+ 
 }
 .img {
   width: 100%;
   border-radius: 25px;
   opacity: 0.7;
   object-fit: cover;
+  height: 100%;
 }
-.title {
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  color: #ffffff;
-  animation: appear 3s;
-}
+
 
 @keyframes appear {
   from {
