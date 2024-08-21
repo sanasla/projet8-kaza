@@ -15,6 +15,7 @@ export default function Gallery() {
 
   return (
     <div className="gallery-container">
+      <div className="cards">
       {gallery.map((data) => (
         <Card
           key={data.id}
@@ -23,6 +24,7 @@ export default function Gallery() {
           cover={data.cover}
         />
       ))}
+      </div>
     </div>
   );
 }

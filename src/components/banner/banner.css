@@ -1,6 +1,8 @@
 .banner {
   margin-top: 16px;
 }
+
+.imgContainerAbout,
 .imgContainerHome {
   width: 100%;
   display: flex;
@@ -9,12 +11,14 @@
   border-radius: 25px;
   background: rgb(0, 0, 0);
 }
+
 .bannerImg {
   width: 100%;
   border-radius: 25px;
   opacity: 0.7;
   object-fit: cover;
 }
+
 .bannerTitle {
   position: absolute;
   font-style: normal;
@@ -48,11 +52,17 @@
     height: 111px;
   }
 
-  .img {
+  .imgContainerAbout {
+    justify-content: left;
+    border-radius: 10px;
+    height: 223px;
+  }
+
+  .bannerImg{
     border-radius: 10px;
     height: 100%;
   }
-  .title {
+  .bannerTitle{
     font-size: 24px;
     width: 60%;
     padding-left: 16px;
@@ -62,16 +72,17 @@
 /*Media queries pour tablettes*/
 
 @media screen and (min-width: 481px) and (max-width: 830px) {
+  .imgContainerAbout,
   .imgContainerHome {
     justify-content: left;
     border-radius: 10px;
     height: 111px;
   }
-  .img {
+  .bannerImg{
     border-radius: 10px;
     height: 111px;
   }
-  .title {
+  .bannerTitle {
     font-size: 30px;
     width: 60%;
     padding-left: 16px;

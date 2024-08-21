@@ -1,7 +1,7 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import Banner_about from "../components/Banner-about/BannerAbout";
 import Collapse from "../components/Collapse/Collapse";
+import Banner from "../components/Banner/Banner";
 
 import "../styles/about.css";
 import "../styles/index.css";
@@ -35,7 +35,7 @@ export default function About() {
         <Header />
 
         <div> 
-        <Banner_about />
+        <Banner location="about" />
         </div>
 
         <section className="collapseAboutContainer">
