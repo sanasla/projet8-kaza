@@ -20,11 +20,10 @@ export default function Collapse({title, text }) {
             src={arrow}
             className={isOpen ? 'iconUp' : 'iconDown'}
             alt="arrow"
-            role="button"
           />
         </div>
       
-        { /* if isOpen=== true display text */}
+        { /* if isOpen=== true then on affiche le texte */}
         {isOpen && 
           <div className="text">
             {text}

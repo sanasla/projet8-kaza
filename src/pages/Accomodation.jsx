@@ -5,12 +5,10 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import FilledStar from '../assets/FilledStar.svg'
 import EmptyStar from '../assets/EmptyStar.svg'
-import Error404 from '../components/Error404/Error404'
 import Carrousel from '../components/Carousel/Carrousel'
 import Collapse from '../components/Collapse/Collapse'
 import '../styles/accomodation.css'
 import { useNavigate } from "react-router-dom";
-
 export default function Accomodation() {
   const navigate = useNavigate();
   const urlId = useParams().id 
