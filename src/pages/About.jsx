@@ -2,6 +2,8 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Collapse from "../components/Collapse/Collapse";
 import Banner from "../components/Banner/Banner";
+import aboutBannerImg from "../assets/bannerabout.jpg";
+
 
 import "../styles/about.css";
 import "../styles/index.css";
@@ -35,7 +37,14 @@ export default function About() {
         <Header />
 
         <div> 
-        <Banner location="about" />
+       <Banner>
+       <img
+              src={aboutBannerImg}
+              alt="chaine de montagnes enneigée"
+              className="bannerImg"
+            />
+        
+        </Banner> 
         </div>
 
         <section className="collapseAboutContainer">
